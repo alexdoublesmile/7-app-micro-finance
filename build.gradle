@@ -65,3 +65,22 @@ jacoco {
 pitest {
     pitestVersion = '1.4.8'
 }
+
+tasks.withType(Checkstyle) {
+    maxWarnings = 0
+}
+
+tasks.withType(com.github.spotbugs.SpotBugsTask) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+tasks.withType(JacocoReport) {
+    reports {
+        xml.enabled = true
+        csv.enabled = false
+        html.destination file("${buildDir}/reports/coverage")
+    }
+}
