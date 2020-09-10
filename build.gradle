@@ -1,0 +1,41 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.1.RELEASE'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '2.1.1.RELEASE'
+}
+
+group 'edu.plohoy'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven {
+        url = 'http://packages.confluent.io/maven/'
+    }
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+idea {
+    project {
+        sourceCompatibility = 1.8
+        languageLevel = 1.8
+    }
+}
+
+bootJar {
+    baseName = "test-micro"
+}
