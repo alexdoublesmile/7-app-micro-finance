@@ -48,7 +48,7 @@ idea {
 }
 
 bootJar {
-    baseName = "test-micro"
+    baseName = "Micro Finance"
 }
 
 //checkstyle {
