@@ -1,4 +1,4 @@
-package edu.plohoy.micro.rest;
+package edu.plohoy.micro.api.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
