@@ -14,4 +14,5 @@ public class TimeController {
     public String getTime() {
         return LocalDateTime.now().toString();
     }
+    
 }

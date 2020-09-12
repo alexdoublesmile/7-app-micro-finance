@@ -9,11 +9,11 @@ plugins {
     id 'idea'
     id 'org.springframework.boot' version '2.1.1.RELEASE'
 
-    id "checkstyle"
-    id "pmd"
-    id "jacoco"
-    id "com.github.spotbugs" version "1.6.9"
-    id "info.solidsoft.pitest" version "1.4.0"
+//    id "checkstyle"
+//    id "pmd"
+//    id "jacoco"
+//    id "com.github.spotbugs" version "1.6.9"
+//    id "info.solidsoft.pitest" version "1.4.0"
 }
 
 group 'edu.plohoy'
@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+//    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
@@ -46,41 +46,41 @@ bootJar {
     baseName = "test-micro"
 }
 
-checkstyle {
-    toolVersion = '8.21'
-}
-
-spotbugs {
-    toolVersion = '3.1.12'
-}
-
-pmd {
-    toolVersion = '6.15.0'
-}
-
-jacoco {
-    toolVersion = '0.8.4'
-}
-
-pitest {
-    pitestVersion = '1.4.8'
-}
-
-tasks.withType(Checkstyle) {
-    maxWarnings = 0
-}
-
-tasks.withType(com.github.spotbugs.SpotBugsTask) {
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
-}
-
-tasks.withType(JacocoReport) {
-    reports {
-        xml.enabled = true
-        csv.enabled = false
-        html.destination file("${buildDir}/reports/coverage")
-    }
-}
+//checkstyle {
+//    toolVersion = '8.21'
+//}
+//
+//spotbugs {
+//    toolVersion = '3.1.12'
+//}
+//
+//pmd {
+//    toolVersion = '6.15.0'
+//}
+//
+//jacoco {
+//    toolVersion = '0.8.4'
+//}
+//
+//pitest {
+//    pitestVersion = '1.4.8'
+//}
+//
+//tasks.withType(Checkstyle) {
+//    maxWarnings = 0
+//}
+//
+//tasks.withType(com.github.spotbugs.SpotBugsTask) {
+//    reports {
+//        xml.enabled = false
+//        html.enabled = true
+//    }
+//}
+//
+//tasks.withType(JacocoReport) {
+//    reports {
+//        xml.enabled = true
+//        csv.enabled = false
+//        html.destination file("${buildDir}/reports/coverage")
+//    }
+//}
