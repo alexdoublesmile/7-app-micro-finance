@@ -3,6 +3,8 @@ spring:
     property-naming-strategy: SNAKE_CASE
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql:http://localhost/micro
+    url: jdbc:postgresql://localhost/micro
     username: postgres
     password: 44881212
+  liquibase:
+    change-log: classpath:db/db.changelog-master.xml
