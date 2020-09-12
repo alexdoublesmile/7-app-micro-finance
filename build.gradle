@@ -33,7 +33,9 @@ repositories {
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
     compile "org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}"
-//    compile "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
+    compile "org.postgresql:postgresql:42.2.16"
+    //    compile "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
+//    compile "com:h2database:h2:1.4.197"
 
     testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
     testCompile "junit:junit:4.12"
