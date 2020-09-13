@@ -2,8 +2,10 @@ package edu.plohoy.micro.impl.service;
 
 import edu.plohoy.micro.api.domain.StockInfo;
 import edu.plohoy.micro.api.service.StockService;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@Service
 public class StockServiceImpl implements StockService {
     private final RestTemplate restTemplate;
     private final String serviceUrl;
