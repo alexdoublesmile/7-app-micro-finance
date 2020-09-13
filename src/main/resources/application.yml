@@ -6,3 +6,7 @@ spring:
     password: 44881212
   liquibase:
     change-log: classpath:db/changelog-master.xml
+
+service:
+  stock:
+    url: http://localhost:8082
