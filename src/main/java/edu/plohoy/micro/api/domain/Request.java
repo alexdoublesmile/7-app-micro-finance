@@ -1,5 +1,7 @@
 package edu.plohoy.micro.api.domain;
 
+import edu.plohoy.micro.api.domain.command.CreateRequest;
+
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -19,6 +21,16 @@ public class Request {
         this.stockCode = stockCode;
         this.stockCount = stockCount;
         this.requestDate = requestDate;
+    }
+
+    public static Request from(CreateRequest command) {
+        return new Request(
+                command.getId(),
+                command.getPersonId(),
+                command.getStockCode(),
+                command.getStockCount(),
+                command.getRequestDate()
+        );
     }
 
     public UUID getId() {
