@@ -6,6 +6,8 @@ import edu.plohoy.micro.api.domain.StockInfo;
 import edu.plohoy.micro.api.domain.command.CreateRequest;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
+
 @Component
 public class RequestHandler {
     private RequestDao requestDao;
@@ -22,5 +24,11 @@ public class RequestHandler {
     public void createRequest(CreateRequest command) {
         requestDao.insert(Request.from(command));
         StockInfo stock = stockService.getStockInfo(command.getStockCode());
+        commandSender.checkAccount(
+                command.getId(),
+                command.getPersonId(),
+                stock.getPrice().multiply(
+                        BigDecimal.valueOf(command.getStockCount()))
+        );
     }
 }
