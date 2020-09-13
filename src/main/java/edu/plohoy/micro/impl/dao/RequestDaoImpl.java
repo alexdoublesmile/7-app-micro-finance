@@ -3,6 +3,9 @@ package edu.plohoy.micro.impl.dao;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collections;
+import java.util.UUID;
+
 @Repository
 public class RequestDaoImpl {
     private static final String INSERT_QUERY =
@@ -18,5 +21,8 @@ public class RequestDaoImpl {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    public void delete(UUID requestId) {
+        jdbcTemplate.update(DELETE_QUERY, Collections.singletonMap("requestId", requestId));
+    }
 
 }
