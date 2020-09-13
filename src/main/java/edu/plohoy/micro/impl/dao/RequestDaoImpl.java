@@ -12,7 +12,7 @@ import java.util.UUID;
 public class RequestDaoImpl {
     private static final String INSERT_QUERY =
             "insert into request (id, person_id, stock_code, stock_count, request_date)" +
-                    " values (:id', :person_id, :stock_code, :stock_count, :request_date)";
+                    " values (:id', :personId, :stockCode, :stockCount, :requestDate)";
 
     private static final String DELETE_QUERY =
             "delete from request where id = :requestId";
