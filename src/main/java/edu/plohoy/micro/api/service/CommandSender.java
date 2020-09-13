@@ -9,6 +9,6 @@ import java.util.UUID;
 public class CommandSender {
 
     public void checkAccount(UUID requsetId, UUID personId, BigDecimal sum) {
-        
+
     }
 }

@@ -19,7 +19,7 @@ plugins {
 group 'edu.plohoy'
 version '1.0'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
     mavenLocal()
@@ -44,8 +44,8 @@ dependencies {
 
 idea {
     project {
-        sourceCompatibility = 1.8
-        languageLevel = 1.8
+        sourceCompatibility = 11
+        languageLevel = 11
     }
 }
 

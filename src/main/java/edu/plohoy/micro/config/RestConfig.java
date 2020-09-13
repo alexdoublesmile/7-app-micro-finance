@@ -29,7 +29,7 @@ public class RestConfig {
 
     @Bean
     public RestTemplate restTemplate(ObjectMapper objectMapper) {
-        HttpClient httpClient = new HttpClientBuilder().create()
+        HttpClient httpClient = HttpClientBuilder.create()
                 .setMaxConnTotal(MAX_CONN_TOTAL)
                 .setMaxConnPerRoute(MAX_CONN_PER_ROUTE)
                 .build();
