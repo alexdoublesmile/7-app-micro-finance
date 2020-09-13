@@ -49,6 +49,20 @@ public class RequestDaoTest {
 
     @Test
     public void delete() {
+        Request request = new Request(
+                UUID.randomUUID(),
+                UUID.randomUUID(),
+                "GMK",
+                10,
+                LocalDateTime.now());
+
+        dao.insert(request);
+
+        dao.delete(request.getId());
+
+        Map<String, Object> result = jdbcTemplate.queryForMap("select * from request where id = ?", request.getId());
+
+        assertEquals(result.size(), 0);
     }
 
     @Test
