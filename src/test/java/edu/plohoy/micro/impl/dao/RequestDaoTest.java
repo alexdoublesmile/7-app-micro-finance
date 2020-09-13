@@ -62,7 +62,7 @@ public class RequestDaoTest {
 
         Map<String, Object> result = jdbcTemplate.queryForMap("select * from request where id = ?", request.getId());
 
-        assertEquals(result.size(), 0);
+        assertEquals(0, result.size());
     }
 
     @Test

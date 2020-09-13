@@ -19,6 +19,9 @@ public class RequestDaoImpl implements RequestDao {
     private static final String DELETE_QUERY =
             "delete from request where id = :requestId";
 
+    private static final String FIND_BY_ID_QUERY =
+            "select * from request where id = :requestId";
+
     private final NamedParameterJdbcTemplate jdbcTemplate;
 
     public RequestDaoImpl(NamedParameterJdbcTemplate jdbcTemplate) {
@@ -30,6 +33,11 @@ public class RequestDaoImpl implements RequestDao {
         jdbcTemplate.update(
                 INSERT_QUERY,
                 new BeanPropertySqlParameterSource(request));
+    }
+
+    @Override
+    public Request findById(UUID requestId) {
+        return null;
     }
 
     @Override
@@ -46,11 +54,6 @@ public class RequestDaoImpl implements RequestDao {
 
     @Override
     public List<Request> findAll() {
-        return null;
-    }
-
-    @Override
-    public Request findById(UUID requestId) {
         return null;
     }
 }
