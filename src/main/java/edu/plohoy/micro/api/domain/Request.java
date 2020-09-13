@@ -1,18 +1,19 @@
 package edu.plohoy.micro.api.domain;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.UUID;
 
 public class Request {
-    private Long id;
-    private Long personId;
+    private UUID id;
+    private UUID personId;
     private String stockCode;
     private int stockCount;
-    private LocalDate requestDate;
+    private LocalDateTime requestDate;
 
     public Request() {
     }
 
-    public Request(Long id, Long personId, String stockCode, int stockCount, LocalDate requestDate) {
+    public Request(UUID id, UUID personId, String stockCode, int stockCount, LocalDateTime requestDate) {
         this.id = id;
         this.personId = personId;
         this.stockCode = stockCode;
@@ -20,19 +21,19 @@ public class Request {
         this.requestDate = requestDate;
     }
 
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
-    public Long getPersonId() {
+    public UUID getPersonId() {
         return personId;
     }
 
-    public void setPersonId(Long personId) {
+    public void setPersonId(UUID personId) {
         this.personId = personId;
     }
 
@@ -52,11 +53,11 @@ public class Request {
         this.stockCount = stockCount;
     }
 
-    public LocalDate getRequestDate() {
+    public LocalDateTime getRequestDate() {
         return requestDate;
     }
 
-    public void setRequestDate(LocalDate requestDate) {
+    public void setRequestDate(LocalDateTime requestDate) {
         this.requestDate = requestDate;
     }
 }
