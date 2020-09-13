@@ -9,6 +9,17 @@ public class Request {
     private int stockCount;
     private LocalDate requestDate;
 
+    public Request() {
+    }
+
+    public Request(Long id, Long personId, String stockCode, int stockCount, LocalDate requestDate) {
+        this.id = id;
+        this.personId = personId;
+        this.stockCode = stockCode;
+        this.stockCount = stockCount;
+        this.requestDate = requestDate;
+    }
+
     public Long getId() {
         return id;
     }
