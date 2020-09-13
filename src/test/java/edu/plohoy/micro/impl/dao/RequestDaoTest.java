@@ -60,7 +60,7 @@ public class RequestDaoTest {
 
         dao.delete(request.getId());
 
-        Map<String, Object> result = jdbcTemplate.queryForMap("select * from request where id = ?", request.getId());
+        var result = jdbcTemplate.queryForMap("select * from request where id = ?", request.getId());
 
         assertEquals(0, result.size());
     }

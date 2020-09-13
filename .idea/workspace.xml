@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36911434-4fd2-474d-8bdb-e17d7d594ae5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/CommandSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/CommandSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/plohoy/micro/api/service/StockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/plohoy/micro/api/service/StockService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/edu/plohoy/micro/impl/dao/RequestDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/edu/plohoy/micro/impl/dao/RequestDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -92,8 +93,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/config/RestConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+            <state relative-caret-position="456">
+              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,42 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/domain/Request.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1230#1231#0" expanded="true" />
-                <element signature="e#1264#1265#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
-                <element signature="e#1371#1372#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/RequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+              <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,18 +205,18 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/dao/RequestDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/plohoy/micro/api/dao/RequestDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/RequestService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/impl/dao/RequestDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/domain/command/CreateRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/domain/Request.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/config/RestConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/StockService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/impl/service/StockServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/domain/StockInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/RequestHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/CommandSender.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/RequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/plohoy/micro/config/RestConfig.java" />
       </list>
     </option>
   </component>
@@ -398,6 +379,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="micro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-finance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-finance" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -411,12 +407,15 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599991624766" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599992504498" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.5126437" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -442,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.RequestDaoTest.delete">
     <configuration name="micro [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -570,9 +569,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RequestDaoTest.delete" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.RequestDaoTest.insert" />
-        <item itemvalue="JUnit.RequestDaoTest.delete" />
         <item itemvalue="JUnit.RequestDaoTest" />
         <item itemvalue="Gradle.micro [dependencies]" />
       </list>
@@ -595,14 +594,11 @@
       <workItem from="1599886298507" duration="12664000" />
       <workItem from="1599933020021" duration="547000" />
       <workItem from="1599971787077" duration="3484000" />
-      <workItem from="1599982387992" duration="8974000" />
+      <workItem from="1599982387992" duration="10006000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RequestDaoTest_delete - 2020.09.13 at 11h 00m 21s.xml">
-      <configuration name="RequestDaoTest.delete" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RequestDaoTest_delete - 2020.09.13 at 11h 01m 28s.xml">
       <configuration name="RequestDaoTest.delete" configurationId="JUnit" />
     </history-entry>
@@ -630,15 +626,18 @@
     <history-entry file="RequestDaoTest_insert - 2020.09.13 at 12h 02m 45s.xml">
       <configuration name="RequestDaoTest.insert" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RequestDaoTest_delete - 2020.09.13 at 13h 19m 30s.xml">
+      <configuration name="RequestDaoTest.delete" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35296000" />
+    <option name="totallyTimeSpent" value="36328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -648,7 +647,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1574468" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32553193" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,7 +657,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32978722" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -769,16 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/domain/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -836,16 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/config/RestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/StockService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -879,20 +858,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/RequestHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/CommandSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/CommandSender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/api/service/RequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="391">
+          <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/plohoy/micro/impl/dao/RequestDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/plohoy/micro/config/RestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -909,5 +908,82 @@
   </component>
   <component name="gradleExecuteTaskHistory">
     <option value="$PROJECT_DIR$" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.slf4j:slf4j-api:1.7.23</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5126437" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>edu.plohoy.micro</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

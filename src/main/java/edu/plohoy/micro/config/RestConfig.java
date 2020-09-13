@@ -43,23 +43,10 @@ public class RestConfig {
         restTemplate.setMessageConverters(asList(
                 new StringHttpMessageConverter(),
                 new FormHttpMessageConverter(),
-                new ByteArrayHttpMessageConverter(),
-                new MappingJackson2HttpMessageConveter(objectMapper)
+                new ByteArrayHttpMessageConverter()
         ));
 
         return restTemplate;
-    }
-
-    @Bean
-    public ObjectMapper objectMapper() {
-        JavaTimeModule javaTimeModule = new JavaTimeModule();
-        javaTimeModule.setSerializer(new LocalDateTimeSerializer(DateTimeFormatter.ISO_DATE_TIME));
-        javaTimeModule.setSerializer(new LocalDateSerializer(DateTimeFormatter.ISO_DATE));
-
-        return new ObjectMapper().registerModule(javaTimeModule)
-                .configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false)
-                .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
-                .enable(SerializationFeature.INDENT_OUTPUT);
     }
 
 }
