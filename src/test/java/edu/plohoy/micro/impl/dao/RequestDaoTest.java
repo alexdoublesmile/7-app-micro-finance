@@ -11,6 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 import java.util.UUID;
 
 import static org.junit.Assert.*;
@@ -27,7 +28,23 @@ public class RequestDaoTest {
 
     @Test
     public void insert() {
-//        new Request(UUID.randomUUID(), UUID.randomUUID(), "GMK", 10, LocalDateTime.now());
+        Request request = new Request(
+                UUID.randomUUID(),
+                UUID.randomUUID(),
+                "GMK",
+                10,
+                LocalDateTime.now());
+
+        dao.insert(request);
+
+        Map<String, Object> result = jdbcTemplate.queryForMap("select * from request where id = ?", request.getId());
+
+        assertTrue(result.size() > 0);
+        assertEquals(request.getId(), result.get("id"));
+        assertEquals(request.getPersonId(), result.get("person_id"));
+        assertEquals(request.getStockCode(), result.get("stock_code"));
+        assertEquals(String.valueOf(request.getStockCount()), result.get("stock_count").toString());
+        assertNotNull(result.get("request_date"));
     }
 
     @Test
